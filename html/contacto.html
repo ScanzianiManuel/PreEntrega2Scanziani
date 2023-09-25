@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contacto- Fantasilandia</title>
+    <meta name="description" content="porque ante cualquier consulta puedes contactarnos siempre tendremos una opcion de piñata para ti" > 
+    <link rel="shortcut icon" href="../img/fantasilandia-logo-png-header.png" type="image/x-icon"> 
     <!-- alt+shif+a comment -->
     <!-- BS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,6 +14,11 @@
     <!-- CSS PROPIA PERSONAL -->
     <link rel="stylesheet" href="../css/estilo.css" />
 </head>
+
+<!-- fonts -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Mooli&display=swap');
+</style>
 
 <body>
     <!-- NavBar -->
@@ -57,45 +64,42 @@
     </header>
 
     <main>
-        <img
-          class="imgbanderinescentrar"
-          src="../img/banderinesnegrocolor.webp"
-          alt="banderines"
-        />
-  
-        <div class="contenedorPuedesContactarnos">
-          <h2>Porque ante cualquier consulta</h2>
-          <h2>puedes contactarnos</h2>
+
+
+        <div class="contenedorFormulario">
+
+            <div class="puedesContactarnos">
+                <img class="img-fluid" src="../img/banderinescolor.webp" alt="imagen banderines de colores">
+                <p>ante cualquier consulta</p>
+                <h2>Contáctanos</h2>
+                <img class="img-fluid logFant" src="../img/logofantasilandiapng.png" alt="Imágen del Logo piñatas Fantasilandia">
+            </div>
+
+            <!-- formulario contacto -->
+            <form>
+                <div class="formContacto">
+                    <label for="exampleFormControlInput1">Nombre</label>
+                    <input type="" class="form-control" id="exampleFormControlInput1" placeholder="Ej.: nombre">
+                </div>
+
+                <div class="formContacto">
+                    <label for="exampleFormControlInput2">Apellido</label>
+                    <input type="" class="form-control" id="exampleFormControlInput2" placeholder="Ej.: apellido">
+                </div>
+
+                <div class="formContacto">
+                    <label for="exampleFormControlInput3">Correo</label>
+                    <input type="" class="form-control" id="exampleFormControlInput3"
+                        placeholder="Ej.: tuemail@gmail.com">
+                </div>
+
+                <div class="formContacto">
+                    <label for="exampleFormControlTextarea1">Deje su Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
         </div>
-  
-        <img
-          class="imgPuedesContactarnos"
-          src="../img/logofantasilandiapng.png"
-          alt="logofantasilandia"
-        />
-  
-        <form>
-          <label for="nombre"> Nombre </label>
-          <input type="text" id="nombre" />
-  
-          <label for="apellido"> Apellido </label>
-          <input type="text" id="apellido" />
-  
-          <label for="correo"> Correo </label>
-          <input type="email" id="correo" />
-  
-          <label for="mensaje"> Mensaje </label>
-          <textarea
-            name=""
-            id="mensaje"
-            cols="30"
-            rows="10"
-            placeholder="Deje su mensaje"
-          ></textarea>
-  
-          <input type="submit" />
         </form>
-      </main>
+    </main>
 
     <!-- FOOTER -->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
